@@ -13,7 +13,7 @@ public class Ball : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    private void Start()
+    public void Start()
     {
 
         StartCoroutine(Delay(1));

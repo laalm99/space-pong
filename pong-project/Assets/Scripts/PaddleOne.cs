@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PaddleOne : Paddle
 {
+
     private Vector2 _direction;
 
     private void Update()
@@ -29,4 +30,6 @@ public class PaddleOne : Paddle
 
         }
     }
+
+    
 }

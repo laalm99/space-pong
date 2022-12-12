@@ -4,7 +4,8 @@ using UnityEngine.EventSystems;
 
 public class ScoringZone : MonoBehaviour
 {
-    
+
+    public AudioSource _audio;
 
     public EventTrigger.TriggerEvent scoreTrigger;
 
@@ -14,6 +15,7 @@ public class ScoringZone : MonoBehaviour
 
         if (ball != null)
         {
+            _audio.Play();
             BaseEventData eventData = new BaseEventData(EventSystem.current);
             this.scoreTrigger.Invoke(eventData);
         }
