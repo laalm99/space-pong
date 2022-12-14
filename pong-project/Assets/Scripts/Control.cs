@@ -10,8 +10,10 @@ public class Control : MonoBehaviour
         clickButton.Play();
     }
 
-    public void NextScene()
+    public void NextScene(int i)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(i);
     }
+
+
 }
