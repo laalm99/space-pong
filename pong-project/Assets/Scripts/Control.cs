@@ -9,7 +9,7 @@ public class Control : MonoBehaviour
     {
         clickButton.Play();
     }
-
+     
     public void NextScene(int i)
     {
         SceneManager.LoadScene(i);

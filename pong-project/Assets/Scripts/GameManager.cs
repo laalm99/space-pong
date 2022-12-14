@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject endScreen;
 
-    public GameObject playAgainBttn;
+    //public GameObject playAgainBttn;
 
     public Text winnerText;
 
@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
         endScreen.SetActive(false);
         winnerText.gameObject.SetActive(false);
-        playAgainBttn.SetActive(false);
+      //  playAgainBttn.SetActive(false);
     }
 
     public void OneScores()
@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         endScreen.SetActive(true);
         winnerText.gameObject.SetActive(true);
-        playAgainBttn.SetActive(true);
+       // playAgainBttn.SetActive(true);
 
         if (_oneScore == 10)
         {
