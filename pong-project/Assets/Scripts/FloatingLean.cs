@@ -9,7 +9,7 @@ public class FloatingLean : MonoBehaviour
 
     void Start()
     {
-        LeanTween.moveY(this.gameObject, to, time).setLoopPingPong();
+        LeanTween.moveY(GetComponent<RectTransform>(), to, time).setLoopPingPong();
 
        
     }
